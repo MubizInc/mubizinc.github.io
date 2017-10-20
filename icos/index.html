@@ -125,7 +125,18 @@
 				<p>Metamask est un wallet ethereum directement sous la forme d'une extension Google Chrome/Firefox (LightNode). Elle vous permet de stocker vos clés Ethereum, recevoir des transactions, signer et émettre des transactions sans avoir besoin d'un client lourd.<br/>
 				MetaMask vous indique également les tokens ERC#20 liés à vos adresses.</p>
 				<ul class="list-group">
-					<li class="list-group-item">Installer <a href="https://metamask.io/" title="Metamask" rel="nofollow" target="_blanck">Metamask</a></li>
+					<li class="list-group-item">
+						Installer <a href="https://metamask.io/" title="Metamask" rel="nofollow" target="_blanck">Metamask</a>
+					</li>
+					<li class="list-group-item">
+						Lancer l'application et valider les CGV si vous le souhaitez
+					</li>
+					<li class="list-group-item">
+						Créer votre HD Wallet et sauvegarder votre clé mnemonic dans un fichier de back-up
+					</li>
+					<li class="list-group-item">
+						Donner un nom à votre wallet (fonction "edit")
+					</li>
 				</ul>
 			</div>
 			<div class="col-md-3">
@@ -141,7 +152,15 @@
 					Parity vous permet également de stocker vos clés et réaliser des transactions, que ce soit en Ethers ou pour des tokens ERC#20
 				</p>
 				<ul class="list-group">
-					<li class="list-group-item">Installer <a href="https://parity.io/" title="Parity" rel="nofollow" target="_blanck">Parity</a></li>
+					<li class="list-group-item">
+						Installer <a href="https://parity.io/" title="Parity" rel="nofollow" target="_blanck">Parity</a>
+					</li>
+					<li class="list-group-item">
+						Lancer l'application et valider les CGV si vous le souhaitez
+					</li>
+					<li class="list-group-item">
+						Créer votre HD Wallet et sauvegarder votre clé mnemonic dans un fichier de back-up (potentiellement le même que MetaMask, en séparant les listes de mots).
+					</li>
 				</ul>
 			</div>
 			<div class="col-md-3">
@@ -208,10 +227,30 @@
 				</div>
 				<ul class="list-group">
 					<li class="list-group-item">
+						<h3>Recevoir une transaction</h3>
+						<h4>Récupération de votre adresse publique</h4>
+						<p>
+							Dans MetaMask, utilisez le menu déroulant à droite pour copier dans votre clipboard votre adresse publique Ethereum.
+						</p>
+						<hr/>
+						<h4>Transmission de votre adresse publique</h4>
+						<p>
+							Transmettre cette adresse à un collègue par le canal de votre choix (e-mail, fb, twitter, whatsapp, ...).<br/>
+							Attendre que l'émetteur de la transaction fasse le nécessaire.
+						</p>
+						<hr/>
+						<h4>Confirmer réception et vérifier dans la blockchain via un exploreur</h4>
+						<p>
+							Lorsque le solde se met à jour, confirmer la réception des ethers Ropsten à l'émetteur.<br/>
+							Lui indiquer également l'URL dans un navigateur afin que vous ayez tout deux l'enregistrement public.
+						</p>
 					</li>
 					<li class="list-group-item">
-					</li>
-					<li class="list-group-item">
+						<h3>Envoyer des ethers Ropsten depuis MetaMask</h3>
+						<p>
+							Lorsque vous recevez l'adresse ethers Ropsten du destinataire, déclencher la transaction depuis MetaMask, en vérifiant que vous êtes bien sur le réseau Ropsten !<br/>
+							Récupérer l'ID de la transaction et/ou votre adresse et/ou l'adresse du destinataire pour obtenir les informations de confirmation dans l'exploreur <a href="https://ropsten.etherscan.io">Ropsten Etherscan</a>.
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -248,7 +287,9 @@
 				<ul class="list-group">
 					<li class="list-group-item">
 						<h3>Création de votre token</h3>
-						Aller sur https://czam.me/mytoken/<br/>
+						Aller sur <a href="https://czam.me/mytoken/">MyToken by CZAM</a>
+						<hr/>
+						Créer un token Ethereum en indiquant : <br/>
 						Name : Mettre PrenomNomCoin (Ex : AlbinCauderlierCoin)<br/>
 						Symbol : Utiliser vos initiales ACCOIN (Mettre un symbole assez long pour qu'il ne soit pas déjà réservé)<br/>
 						Number : 100 millions ( 100000000 )<br/>
@@ -257,15 +298,21 @@
 						Create !
 						<hr/>
 						Confirmer la transaction dans MetaMask avec "Submit"<br/>
+						Le site vous indique l'adresse Ethereum créée pour votre smart-contract de token. <b>La sauvegarder !</b>
 						<hr/>
-						Le site vous indique l'adresse Ethereum créée pour votre smart-contract de token.<br/>
-						Aller sur le Etherscan pour vérifier votre transaction de création et la prise en compte de votre token (avec votre nom)
+						Aller sur Etherscan pour vérifier votre transaction de création et la prise en compte de votre token (avec votre nom)<br/>
+						Dans l'URL d'EtherScan, remplasser "contract" par "token" pour obtenir l'audit de votre token. Merci l'interopérabilité ERC#20 ;-)
 					</li>
 					<li class="list-group-item">
 						<h3>Ajout dans MetaMask</h3>
-					</li>
-					<li class="list-group-item">
-
+						<p>
+							Dans un nouvel onglet de votre navigateur, ouvrir MetaMask.<br/>
+							Se connecter et aller dans l'onglet "Token"<br/>
+							CLiquer sur "Add token"<br/>
+							Indiquer dans le formulaire l'adresse de votre Smart-contract<br/>
+							Les autres champs se remplissent automatiquement<br/>
+							Cliquer sur "Add"
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -289,19 +336,23 @@
 					</div>
 				</div>
 				<p>
-
-					
-					
+					Cette partie a pour objectif de vous familiariser avec le stockage de clés, l'envoie et la réception de transaction, et la gestion de tokens ERC#20.		
 				</p>
 				<ul class="list-group">
 					<li class="list-group-item">
-						https://wallet.ethereum.org/<br/>
+						Aller sur <a href="https://wallet.ethereum.org/">le Web Wallet Ethereum</a><br/>
+						Vous connecter à MetaMask si ce n'est pas déjà le cas.<br/>
+						Vérifier que le site vous montre bien les tokens que vous avez. A défaut, les ajouter de la même façon que précédement (copie de l'adresse du smar-contract).<br/>
+						Déclencher une transaction vers votre binôme et inversement.
+						<hr/>
+						Vous pouvez utiliser ce site et MetaMask pour la rédaction et le déploiement de smart-contract sur la blockchain de test d'Ethereum Ropsten.
 					</li>
 					<li class="list-group-item">
 						Parity<br/>
 					</li>
 					<li class="list-group-item">
 						MyEtherWallet<br/>
+						MyEtherWallet permet également la gestion de votre token, sans que vous soyez inscrit ou connecté.<br/>Dans le cadre du TP, nous ne l'utiliserons pas, mais vous pouvez le faire pour votre propre connaissance.
 					</li>
 				</ul>
 			</div>
@@ -309,9 +360,6 @@
 				<div class="tenor-gif-embed" data-postid="5683993" data-share-method="host" data-width="100%" data-aspect-ratio="2.360189573459716"><a href="https://tenor.com/view/cruise-wolf-of-wall-street-gif-5683993">Boat Dance GIF</a> from <a href="https://tenor.com/search/wolfofwallstreet-gifs">Wolfofwallstreet GIFs</a></div>
 			</div>
 		</div>
-
-
-
 
 
 		<div class="page-header" id="niveau5">
