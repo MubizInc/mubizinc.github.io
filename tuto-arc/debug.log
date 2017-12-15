@@ -1,0 +1,6 @@
+[0116/161138:ERROR:process_reader_win.cc(173)] ResumeThread: Paramètre incorrect. (0x57)
+[0116/161138:ERROR:process_reader_win.cc(142)] SuspendThread: Accès refusé. (0x5)
+[0116/161138:ERROR:process_reader_win.cc(142)] SuspendThread: Accès refusé. (0x5)
+[0116/161138:ERROR:process_reader_win.cc(114)] NtOpenThread: Spécification d’un ID de client non valide.  (0xc000000b)
+[0116/161138:ERROR:exception_snapshot_win.cc(87)] thread ID 15752 not found in process
+[0116/161138:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
