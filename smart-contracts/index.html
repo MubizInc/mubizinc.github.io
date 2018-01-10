@@ -19,7 +19,7 @@
 
 	<meta name="theme-color" content="#009999">
 	
-	<link rel="shortcut icon"   					type="image/ico"	href="/images/favicon.png" 	/>
+	<link rel="shortcut icon" 	type="image/ico"	href="http://mubiz.com/images/favicon.png" 	/>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi"/>
 	
@@ -68,11 +68,15 @@
 				Les étudiants sont invités à tester le déploiement et le bon fonctionnement de leurs smart-contracts sur des noeuds Ethereum.
 			</div>
 
-			<h2>Equipement</h2>
-			<ul>
-				<li><a href="https://desktop.github.com/" title="GitHub Desktop" rel="nofollow" target="_blanck">Github Desktop</a></li>
-				<li><a href="https://ethereum.github.io/browser-solidity/" title="" rel="nofollow" target="_blanck">Browser Solidity d'Ethereum</a></li>
-				<li><a href="http://solidity.readthedocs.io/" title="Documentation Solidity" rel="nofollow" target="_blanck">Documentation Solidity</a></li>
+			<h2>Livrable et notation</h2>
+			<p>
+				A la fin de la dernière séance, envoyer l'adresse de votre repository à votre encadrant, tel que :
+			</p>
+			<ul class="list-group">
+				<li class="list-group-item">Envoyé depuis votre adresse e-mail de l'école (@devinci.fr)</li>
+				<li class="list-group-item">Commencer le sujet par "[ESILV][4A]"</li>
+				<li class="list-group-item">Indiquer votre Prénom NOM, celui de votre binôme + un lien hypertexte vers votre repository Github</li>
+				<li class="list-group-item">Votre repository doit contenir un dossier par TP, avec 2 fichiers : le canevas complété + le smart-contract Solidity</li>
 			</ul>
 		</div>
 	
@@ -80,102 +84,161 @@
 			<div class="container">
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#installation" title="Installation">Installation</a></li>
-						<li><a href="#tp1" title="TP 1 - SYSTEME DE VOTE">TP 1 - SYSTEME DE VOTE</a></li>
-						<li><a href="#tp2" title="TP 2 - ACTIONS D'UNE ENTREPRISE">TP 2 - ACTIONS D'UNE ENTREPRISE</a></li>
-						<li><a href="#tp3" title="TP 3 - ACTE NOTARIE ET PROOF OF EXISTENCE">TP 3 - ACTE NOTARIE ET PROOF OF EXISTENCE</a></li>
-						<li><a href="#tp4" title="TP 2 - POINTS DE FIDELITE ET MONNAIE LOCALE">TP 4 - POINTS DE FIDELITE ET MONNAIE LOCALE</a></li>
-						<li><a href="#tp5" title="TP 5A - CROWDFUNDING">TP 5A - CROWDFUNDING</a></li>
-						<li><a href="#tp5" title="TP 5B - ANNUAIRE">TP 5B - ANNUAIRE</a></li>
-						<li><a href="#tp3bis" title="TP 6 - ORGANISATION DECENTRALISE">TP 6 - ORGANISATION DECENTRALISE</a></li>
+						<li><a href="#installation" title="Installation">Equipement</a></li>
+						<li><a href="#tp1" title="Niveau 1 - SYSTEME DE VOTE">Niveau 1 - SYSTEME DE VOTE</a></li>
+						<li><a href="#tp2" title="Niveau 2 - ACTIONS D'UNE ENTREPRISE">Niveau 2 - ACTIONS D'UNE ENTREPRISE POINTS DE FIDELITE ET MONNAIE LOCALE</a></li>
+						<li><a href="#tp3" title="Niveau 3 - ACTE NOTARIE ET PROOF OF EXISTENCE">Niveau 3 - ACTE NOTARIE ET PROOF OF EXISTENCE</a></li>
+						<li><a href="#tp4" title="Niveau 4A - CROWDFUNDING">Niveau 4A - CROWDFUNDING</a></li>
+						<li><a href="#tp4" title="Niveau 4B - ANNUAIRE">Niveau 4B - ANNUAIRE</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>	
 	
 		<div class="page-header" id="installation">
-			<h2>Pré-requis - Installations</h2>
+			<h2>Equipement</h2>
 		</div>
 		<h3>Plateforme de développement et éditeur de texte</h3>
 		<ul class="list-group">
-			<li class="list-group-item">Installer une plateforme de programmation (Eclipse, Sublime, CodeBlock, ...)</li>
+			<li class="list-group-item">Installer la plateforme de programmation SublimeText et ajouter l'extension Solidity</li>
+			<li class="list-group-item"><a href="https://desktop.github.com/" title="GitHub Desktop" rel="nofollow" target="_blanck">Github Desktop</a></li>
+			<li class="list-group-item"><a href="https://ethereum.github.io/browser-solidity/" title="" rel="nofollow" target="_blanck">Browser Solidity d'Ethereum</a></li>
+			<li class="list-group-item"><a href="http://solidity.readthedocs.io/" title="Documentation Solidity" rel="nofollow" target="_blanck">Documentation Solidity</a></li>
 		</ul>
+
 		<h3>Versionning</h3>
 		<ul class="list-group">
 			<li class="list-group-item">Se créer un compte public GitHub</li>
 			<li class="list-group-item">(option) Installer Github Desktop</li>
-			<li class="list-group-item">Créer un dossier public "solidity-smart-contracts"</li>
+			<li class="list-group-item">Créer un repository public "solidity-smart-contracts"</li>
 			<li class="list-group-item">Indiquer dans le ReadMe les Prénom NOM du binome</li>
+			<li class="list-group-item">Faire un dossier par TP</li>
 			<li class="list-group-item">Indiquer l'URL du ReadMe par e-mail à votre encadrant</li>
 		</ul>	
 		<p>
 			Il n'y a pas d'installation nécessaire pour le développement des Smart Contract en Solidity.
 			Nous utiliserons le <a href="https://ethereum.github.io/browser-solidity/" title="" rel="nofollow" target="_blanck">Browser Solidity d'Ethereum</a>.
 		</p>
-		<h3 id="canvas">Canvas</h3>
+		<h3 id="canevas">Canevas</h3>
 		<a href="../images/4a/canvas_blockchain.png" alt="Canvas Blockchain">
 			<img src="../images/4a/canvas_blockchain.png" alt="Canvas Blockchain"/>
 		</a>
-		<a class="btn btn-primary" role="button" href="http://mubiz.com/doc/canvas/blockchain.xls" rel="nofollow" title="Canvas Blockchain version Excel">Canvas Blockchain en version Excel</a>
-	
-	
-	
-		<div class="page-header" id="tp1">
-			<h2>TP 1 - SYSTEME DE VOTE</h2>
+		<a class="btn btn-primary" role="button" href="http://mubiz.com/doc/canvas/blockchain.xls" rel="nofollow" title="Canevas Blockchain version Excel">Canevas Blockchain en version Excel</a>
+
+
+		<div class="page-header" id="niveau1">
+			<h2>Niveau 0 - Création et destruction d'un smart-contract</h2>
 		</div>
-		<h3>Modélisation</h3>
 		<p>
-			Lister les acteurs, les actifs et les interactions
+			<ul class="list-group">
+				<li class="list-group-item">Sur le browser Solidity, rédiger un smart-contract avec uniquement un constructeur et un destructeur.</li>
+				<li class="list-group-item">"Run" le smart-contract sur Ropsten, via votre wallet MetaMask</li>
+				<li class="list-group-item">"Kill" le smart-contract</li>
+				<li class="list-group-item">Aller dans un exploreur vérifier les transactions et les étapes.</li>
+			</ul>
+
+			<ul class="list-group">
+				<li class="list-group-item">Ajouter au smart-contract un owner et un "modifier" de contrôle.</li>
+				<li class="list-group-item">Ajouter le "modifier" au début de la fonction kill()</li>
+				<li class="list-group-item">"Run" the smart-contract et demandé à votre binôme de tenter de la "Kill" depuis son poste - La transaction de Kill doit être refusée par le réseau.</li>
+				<li class="list-group-item">"Kill" le smart-contract depuis le MetaMask du owner.</li>
+			</ul>
+
+			<ul class="list-group">
+				<li class="list-group-item">Faire hériter votre SC du SC "ownable" puis refaire les étapes précédentes.</li>
+			</ul>
 		</p>
-		
-		<h3>Canvas</h3>
-		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
-		</p>
-		
-		<h3>Smart Contract</h3>
-		<p>
-			Rédiger un smart-contract Solidity permettant la gestion d'un système de vote.
-		</p>
-		<p>
-			(option) Le dériver en un système de points de fidélité.
-		</p>
-		<p>Commit + Push le Smart-contract dans Github</p>
-		
-<!--	
+
 	
+		<div class="page-header" id="niveau1">
+			<h2>Niveau 1 - Système de votes</h2>
+		</div>
+		<h3>Contexte</h3>
+		<p>
+			Prendre une décision commune et applicable est parfois source de débats. Afin de permettre à des personnes d'intérêts, de convictions, de compétences, ... différents, il est parfois nécessaire de recourir à un vote.<br/>
+			C'est pour cela qu'il existe une grande diversité de solutions, ... et qu'une technologie auditable (open source et open data), infalsifiable et peu onéreuse semble idéale pour ce cas d'usage.<br/>
+			A vous d'imaginer votre cas dans lequel l'utilisation d'un smart-contract serait *judicieux*.<br/>
+			<br/>
+			Institut de sondage, vote d'une assemblée générale, référendum, ... détaillez, dans le canvas, les acteurs et les modalités de votre système.<br/>
+			Y-a-t-il un organisateur désigné ?<br/>
+			Qui seront les votants ?<br/>
+			Quelles seront les propositions ?<br/>
+			Qui peut ajouter une proposition ?<br/>
+			Combien de temps durera le vote ?<br/>
+			Comment seront calculés les résultats ?<br/>
+			Peut-on faire des délégations ? Comment ?<br/>
+			Quelles informations a-t-on sur les votants ? Comment s'assure-t-on que chacun ne vote que le nombre de fois autorisé ?<br/>
+			<br/>
+			Une fois ces informations précisées et organisées dans le canevas, il vous sera plus facile de développer votre smart-contract Solidity.
+		</p>
+
+		<ul class="list-group">
+			<li class="list-group-item">
+				<h3>Modélisation à l'aide du canevas</h3>
+				Lister les acteurs, les actifs et les interactions et l'ensemble des réponses aux questions précédentes dans le <a href="#canevas" title="Canevas Blockchain">canevas</a>
+				<hr/>
+				Commit dans Github au fur et à mesure.
+			</li>
+			<li class="list-group-item">
+				<h3>Smart Contract Solidity sur Ropsten avec MetaMask</h3>
+				A l'aide de l'équipement, dont du browser Solidity, rédiger un smart-contract Solidity permettant la gestion d'un système de vote.
+				<hr/>
+				Commit + Push le Smart-contract dans Github régulièrement
+			</li>
+		</ul>
+		
+		
 		
 		<div class="page-header" id="tp2">
-			<h2>TP 2 - ACTIONS D'UNE ENTREPRISE</h2>
+			<h2>Niveau 2 - Actions d'une entreprise OU points de fidélité OU Monnaie locale</h2>
 		</div>
-		<h3>Modélisation</h3>
+		<h3>Contexte</h3>
 		<p>
-			Lister les acteurs, les actifs et les interactions
+			Une blockchain est la solution idéale pour se transmettre de la valeur :<br/>
+			- International<br/>
+			- Nul besoin d'intermédiaire<br/>
+			- Frais minimes<br/>
+			- Pas de délai<br/>
+			- Auditabilité complète rendant tout conflit impossible.<br/>
+			<br/>
+			Consensys, une entreprise spécialisée dans le développement de smart-contracts Solidity, a alors jugé judicieux de normer ce qu'est un "Token". De même qu'il y a les RFC ("Request for comments") pour la normalisation d'Internet, ils ont défini les ERC. L'ERC#20 est une interface de smart-contract indiquant les fonctions que l'on attends d'un token.<br/>
+			<br/>
+			Nous utilisons de nombreux tokens pour nous transmettre différentes valeurs : Actions d'entreprises, points de fidélité, monnaies locales, ...<br/>
+			Charge à vous, de définir le jeton/token que vous souhaitez implémenter.<br/>
+			Quelle sera sa valeur ? <br/>
+			Qui l'émettra ? En quelle quantité ? Sera-t-il possible d'un créer de nouveaux ? D'en détruire ?<br/>
+			Faudra-t-il être authentifié pour en posséder ? pour en transmettre ? Si oui, par qui ?<br/>
+			<br/>
+			Que le trading commence...
 		</p>
-		
-		<h3>Canvas</h3>
-		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
-		</p>
-		
-		<h3>Smart Contract</h3>
-		<p>
-			Rédiger un smart-contract Solidity permettant la gestion des actions d'une entreprise.
-		</p>
-		<p>Commit + Push le Smart-contract dans Github</p>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<h3>Modélisation à l'aide du canevas</h3>
+				Lister les acteurs, les actifs et les interactions et l'ensemble des réponses aux questions précédentes dans le <a href="#canevas" title="Canevas Blockchain">canevas</a>
+				<hr/>
+				Commit dans Github au fur et à mesure.
+			</li>
+			<li class="list-group-item">
+				<h3>Smart Contract Solidity sur Ropsten avec MetaMask</h3>
+				A l'aide de l'équipement, dont du browser Solidity, rédiger un smart-contract Solidity dérivant de la norme ERC#20 et permettant la gestion de votre token.
+				<hr/>
+				Commit + Push le Smart-contract dans Github régulièrement
+			</li>
+		</ul>
 
+		
 
 		<div class="page-header" id="tp3">
-			<h2>TP 3 - ACTE NOTARIE ET PROOF OF EXISTENCE</h2>
+			<h2>Niveau 3 - Acte de notaire et Proof of Existence</h2>
 		</div>
 		<h3>Modélisation</h3>
 		<p>
 			Lister les acteurs, les actifs et les interactions
 		</p>
 		
-		<h3>Canvas</h3>
+		<h3>Canevas</h3>
 		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
+			Compléter le <a href="#canevas" title="Canevas Blockchain">canevas</a>
 		</p>
 		
 		<h3>Smart Contract</h3>
@@ -184,44 +247,18 @@
 		</p>
 		<p>Commit + Push le Smart-contract dans Github</p>
 		
-
-
--->
-		<div class="page-header" id="tp4">
-			<h2>TP 2 - POINTS DE FIDELITE ET MONNAIE LOCALE</h2>
+		
+		<div class="page-header" id="tp5">
+			<h2>Niveau 4A - Crowdfunding</h2>
 		</div>
 		<h3>Modélisation</h3>
 		<p>
 			Lister les acteurs, les actifs et les interactions
 		</p>
 		
-		<h3>Canvas</h3>
+		<h3>Canevas</h3>
 		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
-		</p>
-		
-		<h3>Smart Contract</h3>
-		<p>
-			Rédiger le Smart-contract pour la génération et le transfert de points de fidélité.
-		</p>
-		<p>Commit + Push le Smart-contract dans Github</p>
-		<p>
-			Rédiger le Smart-contract pour la gestion d'une monnaie locale.
-		</p>
-		<p>Commit + Push le Smart-contract dans Github</p>
-
-		
-<!--		<div class="page-header" id="tp5">
-			<h2>TP 5A - CROWDFUNDING</h2>
-		</div>
-		<h3>Modélisation</h3>
-		<p>
-			Lister les acteurs, les actifs et les interactions
-		</p>
-		
-		<h3>Canvas</h3>
-		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
+			Compléter le <a href="#canevas" title="Canevas Blockchain">canevas</a>
 		</p>
 		
 		<h3>Smart Contract</h3>
@@ -232,7 +269,7 @@
 		
 		
 		<div class="page-header">
-			<h2>TP 5B - ANNUAIRE</h2>
+			<h2>Niveau 4B - Annuaire</h2>
 		</div>
 		<h3>Modélisation</h3>
 		<p>
@@ -241,7 +278,7 @@
 		
 		<h3>Canvas</h3>
 		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
+			Compléter le <a href="#canevas" title="Canevas Blockchain">canevas</a>
 		</p>
 		
 		<h3>Smart Contract</h3>
@@ -249,26 +286,7 @@
 			Rédiger le Smart-contract pour la génération et le transfert de points de fidélité.
 		</p>
 		<p>Commit + Push le Smart-contract dans Github</p>
--->		
-		<div class="page-header" id="tp1">
-			<h2>TP 3 - ORGANISATION DECENTRALISE</h2>
-		</div>
-		<h3>Modélisation</h3>
-		<p>
-			Lister les acteurs, les actifs et les interactions
-		</p>
-		
-		<h3>Canvas</h3>
-		<p>
-			Compléter le <a href="#canvas" title="Canvas Blockchain">canvas</a>
-		</p>
-		
-		<h3>Smart Contract</h3>
-		<p>
-			À l'aide des smart contract de vote et de monnaie créer votre organisation décentralisée. 
-		</p>
 
-		<p>Commit + Push le Smart-contract dans Github</p>	
 
 		<div class="page-header" id="insurance">
 			<h2>Aller plus loin - Assurance</h2>
