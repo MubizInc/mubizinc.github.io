@@ -80,13 +80,11 @@
 			<div class="col-sm-9">
 				<h1>Payment</h1>
 			</div>
-			<h2>Quête principale</h2>
+			<h2>Quêtes</h2>
 			<p>
-				Réaliser des transactions sur les testnets (btc, eth, ...) et vérifier leur enregistrement avec un exploreur.
-			</p>
-			<h2>Quête secondaire</h2>
-			<p>
-				Stocker ma solde sur différents supports : mobile, desktop, paperwallet, ...
+				- Générer des wallets sur desktop et mobile et les charger à l'aide de faucets<br/>
+				- Réaliser des transactions sur les testnets (btc, eth, ...)<br/>
+				- Vérifier leur enregistrements avec des exploreurs
 			</p>
 			<h2>Parcours</h2>
 			<p>
@@ -95,6 +93,7 @@
 					<li>Réaliser des transactions avec mon binôme + les retrouver sur différents exploreurs</li>
 					<li>Utiliser un PaperWallet</li>
 					<li>Utiliser un coinb.in pour générer un HD Wallet, une signature, un brain wallet, ...</li>
+					<li>Faire la même chose sur Ethereum (Ropsten)</li>
 				</ul>
 			</p>
 
@@ -108,24 +107,64 @@
 			<h2>Niveau 0 - Equipement</h2>
 		</div>
 		<p>
-			Il n'y a pas d'équipement spécifique nécessaire pour cette quête car vous utiliserez les outils déjà installés pour les précédents TP.
+			Les applications nécessaires pour chaque niveau sont à installer.<br/>
+			Attention : Les applications des premiers niveaux seront réutilisés : gardez-les.
 		</p>
 
 		<div class="page-header" id="niveau1">
 			<h2>Niveau 1 - Téléchargement d'un web wallet + chargement sur un faucet + transaction + exploration</h2>
 		</div>
 		<p>
+			<blockquote>
+			    <p>
+			    	Le préfixe d'une adresse permet de déterminer le réseau auquel elle appartient.<br/>
+			    	Les réseaux étant indépendants, une transaction vers une adresse n'appartenant pas au bon réseau sera validée par le réseau et ne sera plus réutilisable. L'argent transmis sera alors perdu.<br/>
+			    	<br/>
+			    	Pour bitcoin et tous ses forks :<br/>
+			    	Les adresses commençants par 1... sont des adresses de production<br/>
+			    	Les adresses commençants par 2... sont des adresses de test. Ce sont ces adresses que nous utiliserons.<br/>
+			    	Les adresses commençants par 3... sont des adresses de production pour les comptes Multi-Sign (comptes communs) et Segwit.<br/>
+			    	<br/>
+			    	Attention : Il arrive que certaines applications respectent une autre norme. C'est le cas de Jaxx.<br/>
+			    	<br/>
+			    	Pour Ethereum et tous ses forks :<br/>
+			    	Les adresses commencent par "0x...". Il n'y a pas de préfixe permettant de distinguer les adresses de productions de celle de tests. C'est à l'utilisateur d'être vigilant.<br/>
+			    	<br/>
+			    	Vous constaterez lors du niveau sur les PaperWallet que les préfixes sont souvent spécifiques à la crypto-monnaies.
+			    </p>
+			    <footer>Préfixe des adresses</footer>
+			</blockquote>
+
 			<ul class="list-group">
 				<li class="list-group-item">
-					Dans Google Chrome, installer <a href="https://chrome.google.com/webstore/detail/greenaddress-testnet/kbdjlmbommjjeojcngejkamofpnjhahl">l'extension GreenAddress pour testnet</a><br/>
-					Attention de bien sécuriser votre clé mnemonic - 12 ou 24 mots
+					Dans Google Chrome, installer <a href="https://chrome.google.com/webstore/detail/greenaddress-testnet/kbdjlmbommjjeojcngejkamofpnjhahl" title="GreenAddress Testnet" target="_blank" rel="nofollow">l'extension GreenAddress pour testnet</a> et créez vous un compte.<br/>
+					<strong>Sécuriser votre clé mnemonic - 12 ou 24 mots en vous les envoyant par e-mail</strong>
 				</li>
-				<li class="list-group-item">Récupérer 1 btc de test sur le <a href="https://testnet.manu.backend.hamburg/faucet">faucet du testnet de bitcoin</a></li>
-				<li class="list-group-item">Faire une transaction de quelques euros à votre binôme</li>
-				<li class="list-group-item">Suivre l'enregistrement, le minage de votre transaction sur <a href="https://live.blockcypher.com/btc-testnet/">BlockCypher</a> ou <a href="https://www.blocktrail.com/tBTC">BlockTrail</a></li>
+				<li class="list-group-item">Récupérer 1 btc de test sur le <a href="https://testnet.manu.backend.hamburg/faucet" title="Faucet Bitcoin Testnet" target="_blank" rel="nofollow">faucet du testnet de bitcoin</a> (Rq : Faucet = Robinet car envoie au goutte à goutte)</li>
+				<li class="list-group-item">Faire une transaction de 50% de la somme reçue à votre binôme</li>
+				<li class="list-group-item">Suivre l'enregistrement de la transaction, le minage de votre transaction sur <a href="https://live.blockcypher.com/btc-testnet/" title="BlockCypher Testnet" target="_blank" rel="nofollow">BlockCypher</a> ou <a href="https://www.blocktrail.com/tBTC" title="BlockTrail Testnet" target="_blank" rel="nofollow">BlockTrail</a></li>
 				<li class="list-group-item">Explorer votre adresse (solde, historique des transactions, ...)</li>
-				<li class="list-group-item">Aller plus loin (optionnel) : Installer le mobile wallet Jaxx et réaliser des transactions entre mobiles.</li>
-			</ul>	
+				<li class="list-group-item">
+					Répondre aux questions :<br/>
+						- Quelle a été le montant de votre commission ?<br/>
+						- Combien de temps à mis la transaction pour être diffusée = visible par le destinataire ?<br/>
+						- Qu'est-ce que le nombre de confirmations ?<br/>
+						- Qui a reçu la commission ?<br/>
+						- Pourquoi l'émetteur a-t-il changé d'adresse ?<br/>
+						- Combien y avait-il de transactions dans le bloc contenant ma transaction ?<br/>
+						- Qu'est-ce que l'authentification 2FA d'un wallet ? Pour doit-on l'utiliser ?<br/>
+						- Quel est mon nouveau solde ?<br/>
+				</li>
+			</ul>
+			<ul class="list-group">
+				<li class="list-group-item">Installer le mobile wallet GreenBits (testnet)</li>
+				<li class="list-group-item">Envoyez vous, depuis le GreenAddress sur Chrome, le montant restant sur votre application mobile.</li>
+				<li class="list-group-item">Réaliser des transactions entre mobiles avec votre binôme et vos voisins.</li>
+			</ul>
+			<ul class="list-group">
+				<li class="list-group-item">Envoyer 5 mbtc à cette adresse en indiquant, en message, votre Prénom NOM</strong></li>
+				<li class="list-group-item"><strong>Faire les transactions pour rendre les bitcoins de tests au faucet. Address : 2N8hwP1WmJrFF5QWABn38y63uYLhnJYJYTF</strong></li>
+			</ul>
 		</p>
 
 		<div class="page-header" id="niveau2">
@@ -133,8 +172,18 @@
 		</div>
 		<p>
 			<ul class="list-group">
-				<li class="list-group-item">Aller sur <a href="https://walletgenerator.net/">Wallet Generator</a> et générer un paper wallet pour bitcoin de test.</li>
-				<li class="list-group-item">Charger votre paperwallet de quelques euros de tests via une transaction.</li>
+				<li class="list-group-item">
+					Aller sur <a href="https://walletgenerator.net/" title="Paper Wallet Bitcoin Testnet" target="_blank" rel="nofollow">Wallet Generator</a>
+				</li>
+				<li class="list-group-item">Générer des wallet en vrac.</li>
+				<li class="list-group-item">Générer des papers wallet imprimables.</li>
+				<li class="list-group-item">Reprendre la liste des mots clés sauvegardés pour le wallet GreenAddress de Chrome et générer le paper wallet correspondant.</li>
+				<li class="list-group-item">Changer la crypto-monnaie choisie et découvrir votre adresse dans notre crypto-monnaies (pour les mêmes 24 mots)</li>
+			</ul>
+			<ul class="list-group">
+				<li class="list-group-item">
+					Faire rapidement les mêmes actions sur <a href="https://bitaddress.org" title="Paper Wallet Bitcoin" target="_blank" rel="nofollow">BitAddress.org</a> et <a href="https://liteaddress.org" title="Paper Wallet Litecoin" target="_blank" rel="nofollow">LiteAddress.org</a>
+				</li>
 			</ul>
 		</p>
 
@@ -143,10 +192,147 @@
 		</div>
 		<p>
 			<ul class="list-group">
-				<li class="list-group-item">Aller sur <a href="https://coinb.in/">Coinb.in</a> et générez de nouvelles adresses</li>
-				<li class="list-group-item">Tester notamment la partie HD Wallet avec la génération de la seed et des milliards d'adresses dérivées.</li>
+				<li class="list-group-item">Aller sur <a href="https://coinb.in/" title="Coinb.in - Générateur d'adresses" target="_blank" rel="nofollow">Coinb.in</a></li>
+				<li class="list-group-item">
+					Dans la partie "New", générez de nouvelles adresses.
+					Répondre aux questions :<br/>
+						- Qu'est-ce que les clés commençants par xpub et xpriv ?<br/>
+						- Qu'est-ce que le WIF ?<br/>
+						- Qu'est-ce que contient l'adresse ?<br/>
+						- A quoi servent les 24 mots enregistrés (clé mnemonic) ? = Dans quels cas me sont-ils utiles ?<br/>
+				</li>
+				<li class="list-group-item">Dans la partie "HD Wallet", générer une seed. <br/>
+					Dériver ensuite la clé publique 100 fois.<br/>
+					Revenir à la seed et dériver la clé privée 100 fois.
+				</li>
 			</ul>
 		</p>
+
+
+		<div class="page-header" id="niveau4">
+			<h2>Niveau 4 - MetaMask</h2>
+		</div>
+		
+		<h3>Metamask</h3>
+		<div class="row">
+			<div class="col-md-9">
+				<p>Metamask est un wallet ethereum directement sous la forme d'une extension Google Chrome/Firefox (LightNode). Elle vous permet de stocker vos clés Ethereum, recevoir des transactions, signer et émettre des transactions sans avoir besoin d'un client lourd.<br/>
+				MetaMask vous indique également les tokens ERC#20 liés à vos adresses.</p>
+				<ul class="list-group">
+					<li class="list-group-item">
+						Installer <a href="https://metamask.io/" title="Metamask" rel="nofollow" target="_blanck">Metamask</a>
+					</li>
+					<li class="list-group-item">
+						Lancer l'application et valider les CGV si vous le souhaitez
+					</li>
+					<li class="list-group-item">
+						Créer votre HD Wallet et sauvegarder votre clé mnemonic dans un fichier de back-up
+					</li>
+					<li class="list-group-item">
+						Donner un nom à votre wallet (fonction "edit")
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<img src="./../images/tools/metamask2.png" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<h3>Récupération de votre adresse Ethereum</h3>
+						Dans un nouvel onglet : <br/>
+						Se connecter sur Metamask
+						<hr/>
+						Sélectionner le réseau <b>Ropsten</b>
+						<hr/>
+						Copier l'adresse ethereum dans le clipboard
+					</li>
+					<li class="list-group-item">
+						<h3>Chargement à l'aide d'un faucet</h3>
+						Dans un nouvel onglet : <br/>
+						Aller sur <a href="https://faucet.metamask.io/" title ="Faucet Ropsten II" rel="nofollow" target="_blanck">son remplaçant par MetaMask</a><br/>
+						Remarque : Un faucet est un service web permettant de recevoir quelques cryptomonnaies de tests
+						<hr/>
+						Copier son adresse Ethereum et à l'endroit indiqué de la page
+						<hr/>
+						Quand le message de confirmation indique que vous avez reçu une transaction, retourner dans l'onglet spécifique à MetaMask et checker votre solde.
+					</li>
+					<li class="list-group-item">
+						<h3>Utilisation de MetaMask</h3>
+						Si vous avez bien reçu quelques ethers pour Ropsten, faire une transaction vers l'adresse d'un collègue ET/OU indiquer l'adresse à laquelle il peut vous transmettre des ethers de tests.
+						<hr/>
+						Vérifier sur <a href="https://ropsten.etherscan.io" target="_blanck" rel="nofollow">Etherscan</a> que vous voyez bien votre adresse et vos transactions.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<h3>Recevoir une transaction</h3>
+						<h4>Récupération de votre adresse publique</h4>
+						<p>
+							Dans MetaMask, utilisez le menu déroulant à droite pour copier dans votre clipboard votre adresse publique Ethereum.
+						</p>
+						<hr/>
+						<h4>Transmission de votre adresse publique</h4>
+						<p>
+							Transmettre cette adresse à un collègue par le canal de votre choix (e-mail, fb, twitter, whatsapp, ...).<br/>
+							Attendre que l'émetteur de la transaction fasse le nécessaire.
+						</p>
+						<hr/>
+						<h4>Confirmer réception et vérifier dans la blockchain via un exploreur</h4>
+						<p>
+							Lorsque le solde se met à jour, confirmer la réception des ethers Ropsten à l'émetteur.<br/>
+							Lui indiquer également l'URL dans un navigateur afin que vous ayez tout deux l'enregistrement public.
+						</p>
+					</li>
+					<li class="list-group-item">
+						<h3>Envoyer des ethers Ropsten depuis MetaMask</h3>
+						<p>
+							Lorsque vous recevez l'adresse ethers Ropsten du destinataire, déclencher la transaction depuis MetaMask, en vérifiant que vous êtes bien sur le réseau Ropsten !<br/>
+							Récupérer l'ID de la transaction et/ou votre adresse et/ou l'adresse du destinataire pour obtenir les informations de confirmation dans l'exploreur <a href="https://ropsten.etherscan.io">Ropsten Etherscan</a>.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="page-header" id="niveau5">
+			<h2>Niveau 5 - SHA256 et Preuve de travail</h2>
+		</div>
+		<p>
+			<ul class="list-group">
+				<li class="list-group-item">
+					Aller sur <a href="http://passwordsgenerator.net/sha256-hash-generator/" title="SHA256 Générateur" target="_blank" rel="nofollow">SHA256 Web Generator</a>
+				</li>
+				<li class="list-group-item">
+					Indiquer votre Prénom NOM
+				</li>
+				<li class="list-group-item">
+					Ajouter un caractère après votre Prénom NOM jusqu'à ce que le premier caractère soit un "0".
+				</li>
+				<li class="list-group-item">
+					Essayer d'obtenir "00"
+				</li>
+				<li class="list-group-item">
+					Echanger vos résultats avec votre binôme et demandez lui s'il confirme votre preuve de travail.
+				</li>
+			</ul>
+
+			<ul class="list-group">
+				<li class="list-group-item">
+					Optionnel : Cloner la page du site dans une sous-page de votre site Github.
+				</li>
+			</ul>
+		</p>
+
+
 	</div>
 
 	<footer class="footer">
