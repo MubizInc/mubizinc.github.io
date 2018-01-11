@@ -100,7 +100,7 @@
 		</div>
 		<h3>Plateforme de développement et éditeur de texte</h3>
 		<ul class="list-group">
-			<li class="list-group-item">Installer la plateforme de programmation SublimeText et ajouter l'extension Solidity</li>
+			<li class="list-group-item">Installer la plateforme de programmation SublimeText et ajouter le package Solidity (<a href="https://medium.com/@abhinavpraksh/ethereum-solidity-language-syntax-in-sublime-1532e6f3646d" rel="nofollow" target="_blanck">Guide d'installation</a>)</li>
 			<li class="list-group-item"><a href="https://desktop.github.com/" title="GitHub Desktop" rel="nofollow" target="_blanck">Github Desktop</a></li>
 			<li class="list-group-item"><a href="https://ethereum.github.io/browser-solidity/" title="" rel="nofollow" target="_blanck">Browser Solidity d'Ethereum</a></li>
 			<li class="list-group-item"><a href="http://solidity.readthedocs.io/" title="Documentation Solidity" rel="nofollow" target="_blanck">Documentation Solidity</a></li>
@@ -129,25 +129,34 @@
 		<div class="page-header" id="niveau1">
 			<h2>Niveau 0 - Création et destruction d'un smart-contract</h2>
 		</div>
-		<p>
-			<ul class="list-group">
-				<li class="list-group-item">Sur le browser Solidity, rédiger un smart-contract avec uniquement un constructeur et un destructeur.</li>
-				<li class="list-group-item">"Run" le smart-contract sur Ropsten, via votre wallet MetaMask</li>
-				<li class="list-group-item">"Kill" le smart-contract</li>
-				<li class="list-group-item">Aller dans un exploreur vérifier les transactions et les étapes.</li>
-			</ul>
+		<ul class="list-group">
+			<li class="list-group-item">Sur le browser Solidity, rédiger un smart-contract avec uniquement un constructeur et un destructeur.</li>
+			<li class="list-group-item">"Run" le smart-contract sur Ropsten, via votre wallet MetaMask</li>
+			<li class="list-group-item">"Kill" le smart-contract</li>
+			<li class="list-group-item">Aller dans un exploreur (<a href="https://ropsten.etherscan.io" target="_blanck" rel="nofollow" title="Ropsten Etherscan">ropsten.etherscan.io</a> par exemple) pour vérifier les transactions et les étapes.</li>
+		</ul>
 
-			<ul class="list-group">
-				<li class="list-group-item">Ajouter au smart-contract un owner et un "modifier" de contrôle.</li>
-				<li class="list-group-item">Ajouter le "modifier" au début de la fonction kill()</li>
-				<li class="list-group-item">"Run" the smart-contract et demandé à votre binôme de tenter de la "Kill" depuis son poste - La transaction de Kill doit être refusée par le réseau.</li>
-				<li class="list-group-item">"Kill" le smart-contract depuis le MetaMask du owner.</li>
-			</ul>
+		<blockquote>
+		    <p>
+		    	Dans l'onglet "Run", si l'adresse indiquée reste vide :<br/>
+		    	- Vérifier que MetaMask est bien connecté.<br/>
+		    	- Sauvegarde du code Solidity : Ctrl + A / Ctrl + C<br/>
+		    	- Rechargement de la page : Maj + F5<br/>
+		    </p>
+		    <footer>Problème fréquent de connexion de MetaMask</footer>
+		</blockquote>
 
-			<ul class="list-group">
-				<li class="list-group-item">Faire hériter votre SC du SC "ownable" puis refaire les étapes précédentes.</li>
-			</ul>
-		</p>
+		<ul class="list-group">
+			<li class="list-group-item">Ajouter au smart-contract un owner et un "modifier" de contrôle.</li>
+			<li class="list-group-item">Ajouter le "modifier" au début de la fonction kill()</li>
+			<li class="list-group-item">"Run" the smart-contract et demandé à votre binôme de tenter de la "Kill" depuis son poste - La transaction de Kill doit être refusée par le réseau.</li>
+			<li class="list-group-item">"Kill" le smart-contract depuis le MetaMask du owner.</li>
+		</ul>
+
+		<ul class="list-group">
+			<li class="list-group-item">Faire hériter votre SC du SC "ownable" puis refaire les étapes précédentes.</li>
+			<li class="list-group-item">Sauvegarder ce smart-contract Solidity à la racine dans votre repository Github, car il vous sera utile dans de nombreux cas.</li>
+		</ul>
 
 	
 		<div class="page-header" id="niveau1">
@@ -157,18 +166,20 @@
 		<p>
 			Prendre une décision commune et applicable est parfois source de débats. Afin de permettre à des personnes d'intérêts, de convictions, de compétences, ... différents, il est parfois nécessaire de recourir à un vote.<br/>
 			C'est pour cela qu'il existe une grande diversité de solutions, ... et qu'une technologie auditable (open source et open data), infalsifiable et peu onéreuse semble idéale pour ce cas d'usage.<br/>
-			A vous d'imaginer votre cas dans lequel l'utilisation d'un smart-contract serait *judicieux*.<br/>
-			<br/>
+			A vous d'imaginer votre cas dans lequel l'utilisation d'un smart-contract serait *judicieux*.
+		</p>
+		<p>
 			Institut de sondage, vote d'une assemblée générale, référendum, ... détaillez, dans le canvas, les acteurs et les modalités de votre système.<br/>
-			Y-a-t-il un organisateur désigné ?<br/>
-			Qui seront les votants ?<br/>
-			Quelles seront les propositions ?<br/>
-			Qui peut ajouter une proposition ?<br/>
-			Combien de temps durera le vote ?<br/>
-			Comment seront calculés les résultats ?<br/>
-			Peut-on faire des délégations ? Comment ?<br/>
-			Quelles informations a-t-on sur les votants ? Comment s'assure-t-on que chacun ne vote que le nombre de fois autorisé ?<br/>
-			<br/>
+			- Y-a-t-il un organisateur désigné ?<br/>
+			- Qui seront les votants ?<br/>
+			- Quelles seront les propositions ?<br/>
+			- Qui peut ajouter une proposition ?<br/>
+			- Combien de temps durera le vote ?<br/>
+			- Comment seront calculés les résultats ?<br/>
+			- Peut-on faire des délégations ? Comment ?<br/>
+			- Quelles informations a-t-on sur les votants ? Comment s'assure-t-on que chacun ne vote que le nombre de fois autorisé ?
+		</p>
+		<p>
 			Une fois ces informations précisées et organisées dans le canevas, il vous sera plus facile de développer votre smart-contract Solidity.
 		</p>
 
@@ -177,7 +188,7 @@
 				<h3>Modélisation à l'aide du canevas</h3>
 				Lister les acteurs, les actifs et les interactions et l'ensemble des réponses aux questions précédentes dans le <a href="#canevas" title="Canevas Blockchain">canevas</a>
 				<hr/>
-				Commit dans Github au fur et à mesure.
+				Commit dans Github régulièrement
 			</li>
 			<li class="list-group-item">
 				<h3>Smart Contract Solidity sur Ropsten avec MetaMask</h3>
@@ -199,16 +210,19 @@
 			- Nul besoin d'intermédiaire<br/>
 			- Frais minimes<br/>
 			- Pas de délai<br/>
-			- Auditabilité complète rendant tout conflit impossible.<br/>
-			<br/>
-			Consensys, une entreprise spécialisée dans le développement de smart-contracts Solidity, a alors jugé judicieux de normer ce qu'est un "Token". De même qu'il y a les RFC ("Request for comments") pour la normalisation d'Internet, ils ont défini les ERC. L'ERC#20 est une interface de smart-contract indiquant les fonctions que l'on attends d'un token.<br/>
-			<br/>
+			- Auditabilité complète rendant tout conflit impossible.
+		</p>
+		<p>
+			Consensys, une entreprise spécialisée dans le développement de smart-contracts Solidity, a alors jugé judicieux de normer ce qu'est un "Token". De même qu'il y a les RFC ("Request for comments") pour la normalisation d'Internet, ils ont défini les ERC. L'ERC#20 est une interface de smart-contract indiquant les fonctions que l'on attends d'un token.
+		</p>
+		<p>
 			Nous utilisons de nombreux tokens pour nous transmettre différentes valeurs : Actions d'entreprises, points de fidélité, monnaies locales, ...<br/>
 			Charge à vous, de définir le jeton/token que vous souhaitez implémenter.<br/>
-			Quelle sera sa valeur ? <br/>
-			Qui l'émettra ? En quelle quantité ? Sera-t-il possible d'un créer de nouveaux ? D'en détruire ?<br/>
-			Faudra-t-il être authentifié pour en posséder ? pour en transmettre ? Si oui, par qui ?<br/>
-			<br/>
+			- Quelle sera sa valeur ? <br/>
+			- Qui l'émettra ? En quelle quantité ? Sera-t-il possible d'un créer de nouveaux ? D'en détruire ?<br/>
+			- Faudra-t-il être authentifié pour en posséder ? pour en transmettre ? Si oui, par qui ?
+		</p>
+		<p>		
 			Que le trading commence...
 		</p>
 		<ul class="list-group">
@@ -216,7 +230,7 @@
 				<h3>Modélisation à l'aide du canevas</h3>
 				Lister les acteurs, les actifs et les interactions et l'ensemble des réponses aux questions précédentes dans le <a href="#canevas" title="Canevas Blockchain">canevas</a>
 				<hr/>
-				Commit dans Github au fur et à mesure.
+				Commit dans Github régulièrement
 			</li>
 			<li class="list-group-item">
 				<h3>Smart Contract Solidity sur Ropsten avec MetaMask</h3>
@@ -231,6 +245,11 @@
 		<div class="page-header" id="tp3">
 			<h2>Niveau 3 - Acte de notaire et Proof of Existence</h2>
 		</div>
+		<h3>Contexte</h3>
+		<p>
+			Tester blockizor.com
+		</p>
+
 		<h3>Modélisation</h3>
 		<p>
 			Lister les acteurs, les actifs et les interactions
