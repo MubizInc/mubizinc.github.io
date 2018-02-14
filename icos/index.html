@@ -291,7 +291,7 @@
 						<hr/>
 						Créer un token Ethereum en indiquant : <br/>
 						Name : Mettre PrenomNomCoin (Ex : AlbinCauderlierCoin)<br/>
-						Symbol : Utiliser vos initiales ACCOIN (Mettre un symbole assez long pour qu'il ne soit pas déjà réservé)<br/>
+						Symbol : Utiliser vos initiales ACCN (Utiliser 4 ou 5 caractères)<br/>
 						Number : 100 millions ( 100000000 )<br/>
 						Decimal : 0<br/>
 						<hr/>
@@ -300,8 +300,10 @@
 						Confirmer la transaction dans MetaMask avec "Submit"<br/>
 						Le site vous indique l'adresse Ethereum créée pour votre smart-contract de token. <b>La sauvegarder !</b>
 						<hr/>
-						Aller sur Etherscan pour vérifier votre transaction de création et la prise en compte de votre token (avec votre nom)<br/>
-						Dans l'URL d'EtherScan, remplasser "contract" par "token" pour obtenir l'audit de votre token. Merci l'interopérabilité ERC#20 ;-)
+						Aller sur <a href="https://ropsten.etherscan.io">Etherscan</a> pour vérifier votre transaction de création.<br/>
+						Aller dans la page du contract créé.<br/>
+						Remplacer "contract" ou "address" dans l'URL par "token" pour qu'Etherscan détecte votre compatibilité ERC#20 et affiche les donnéees complémentaires (nom, acronyme, ...).<br/>
+						= Dans l'URL d'EtherScan, remplasser "contract" par "token" pour obtenir l'audit de votre token. Merci l'interopérabilité ERC#20 ;-)
 					</li>
 					<li class="list-group-item">
 						<h3>Ajout dans MetaMask</h3>
@@ -342,10 +344,10 @@
 					<li class="list-group-item">
 						Aller sur <a href="https://wallet.ethereum.org/">le Web Wallet Ethereum</a><br/>
 						Vous connecter à MetaMask si ce n'est pas déjà le cas.<br/>
-						Vérifier que le site vous montre bien les tokens que vous avez. A défaut, les ajouter de la même façon que précédement (copie de l'adresse du smar-contract).<br/>
+						Vérifier que le site vous montre bien les tokens que vous avez. A défaut, pour les ajouter, aller dans la partie "Contracts", puis "Ajouter un jeton", puis copier l'adresse de votre smart-contract.<br/>
 						Déclencher une transaction vers votre binôme et inversement.
 						<hr/>
-						Vous pouvez utiliser ce site et MetaMask pour la rédaction et le déploiement de smart-contract sur la blockchain de test d'Ethereum Ropsten.
+						A défaut de Remix, vous pouvez utiliser ce site et MetaMask pour la rédaction et le déploiement de smart-contract sur la blockchain de test d'Ethereum Ropsten. 
 					</li>
 					<li class="list-group-item">
 						Parity<br/>
